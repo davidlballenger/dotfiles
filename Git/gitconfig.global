@@ -1,0 +1,29 @@
+[core]
+	excludesfile = ~/.dotfiles/Git/.gitignore.global
+
+[user]
+	name = David L Ballenger
+	email = dlb@davidlballenger.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPUF86u/Q5EtUrl1n0oSPiJrxz+mr1MVTCOwQGjC+B+y
+
+[push]
+	default = simple
+	followTags = true
+
+[pull]
+	rebase = true
+
+[init]
+	defaultBranch = main
+
+[hub]
+	protocol = ssh
+
+[commit]
+	gpgsign = true
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
