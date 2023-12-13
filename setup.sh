@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# Just load Aliases and Functions
-# (only for Bash)
 
 export dotfiles=$HOME/.dotfiles
 export DOTFILES=$dotfiles
