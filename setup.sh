@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export DOTFILES=$HOME/.dotfiles
+ export DOTFILES=$HOME/.dotfiles
 
 link_files() {
     source=$1
