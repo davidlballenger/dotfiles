@@ -119,5 +119,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 source ${HOME}/.config/op/plugins.sh
 
-# Created by `pipx` on 2023-12-12 23:06:55
-export PATH="$PATH:/Users/dlb/.local/bin"
+# enable pipx autocompletion
+autoload -U bashcompinit
+bashcompinit
+eval "$(register-python-argcomplete pipx)"
+eval "$(register-python-argcomplete ansible)"
+

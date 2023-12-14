@@ -1,4 +1,12 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Created by `pipx` on 2023-12-12 23:06:55
-export PATH="$PATH:/Users/dlb/.local/bin"
+# setup path for pipx installed tools and set PIPX_HOME
+export PATH="/Users/dlb/.local/bin:$PATH"
+export PIPX_HOME="/Users/dlb/.local/pipx"
+
+export DOTFILES=$HOME/.dotfiles
+
+# Setup Homebrew environment if homebrew is installed
+if [[ -x /opt/homebrew/bin/brew ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
